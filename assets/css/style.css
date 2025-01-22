@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
+
+.header1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(75deg, #F48FB1 0%, #FFD8DB 100%);
+    padding: 0.7rem 10vw;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header1 .company-logo {
+    height: 50px;
+    margin-left: 1rem;
+    transition: 1s;
+}
+
+.header1 .company-logo:hover {
+    transform: rotateZ(720deg);
+}
+
+.header1 a.navigation-content {
+    color: #6E6E61;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: all .5s;
+    font-family: "Smooch Sans", serif;
+}
+
+.header1 a.navigation-content:hover {
+    background-color: #DE3163;
+    color: white;
+    box-shadow: 22px 10px 5px 6px rgba(0, 0, 0, 0.73);
+    -webkit-box-shadow: 22px 10px 5px 6px #FF91A4;
+    -moz-box-shadow: 22px 10px 5px 6px rgba(255, 163, 232, 0.73);
+}
+
+body{
+    color: var(--color-primary-1);
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: auto;
+    position: relative;
+}
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+@media (min-aspect-ratio: 16/9) {
+    .bg {
+        object-fit: cover;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .bg {
+        object-fit: cover;
+    }
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    text-align: right;
+    z-index: 1;
+}
+
+.title{
+    font-family: "Smooch Sans", serif;
+    color: rgb(0, 0, 0);
+    font-size: 4rem;
+    text-shadow: 0 0 3px white;
+    margin-bottom: 0.5rem;
+}
+
+.description{
+    font-family: "Smooch Sans", serif;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 3px rgb(0, 0, 0);
+    font-size: 1rem;
+    font-style: italic;
+    margin-top: 0;
+}

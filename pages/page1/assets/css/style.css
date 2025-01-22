@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-two {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url(../img/heart.png);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-size: 18px;
+}
+
+.hero-two {
+  height: 600px;
+  padding: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-two .title {
+  font-size: 8rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.1rem;
+  font-family: "Smooch Sans", serif;
+  text-shadow: 1px 1px 2px black, 0 0 1em rgb(230, 58, 164),
+    0 0 0.2em rgb(0, 0, 0);
+}
+
+.hero-two .subtitle {
+  font-size: 1.5rem;
+  padding-left: 2rem;
+  font-weight: 500;
+  letter-spacing: 1rem;
+}
+
+.header1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(75deg, #F48FB1 0%, #FFD8DB 100%);
+  padding: 0.7rem 10vw;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header1 .company-logo {
+  height: 50px;
+  margin-left: 1rem;
+  transition: 1s;
+}
+
+.header1 .company-logo:hover {
+  transform: rotateZ(720deg);
+}
+
+.header1 a.navigation-content {
+  color: #6E6E61;
+  text-decoration: none;
+  font-family: "Smooch Sans", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.5s;
+}
+
+.header1 a.navigation-content:hover {
+  background-color: #DE3163;
+  color: white;
+  box-shadow: 22px 10px 5px 6px rgba(0, 0, 0, 0.73);
+}
+
+.cards-container {
+  display: grid;
+  font-family: "Smooch Sans", serif;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.card-one,
+.card-two,
+.card-three,
+.card-four {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-wrapper {
+  padding: 12px;
+  text-align: center;
+}
+
+.card-banner-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  transition: transform 0.5s ease;
+}
+
+.card-banner-image:hover {
+  transform: scale(1.1);
+}
+
+.card-title {
+  margin-top: 8px;
+  font-size: 1rem;
+}
+
+.card-description {
+  margin-top: 4px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.footer {
+  background-color: #89c7c1;
+  color: #000000;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.footer-info {
+  text-align: center;
+  margin-top: 10px;
+  flex-basis: 100%;
+}
+
+.footer-info p {
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+  color: #000000;
+}
