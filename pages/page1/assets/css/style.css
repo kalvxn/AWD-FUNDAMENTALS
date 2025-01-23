@@ -9,7 +9,7 @@
 .container-two {
   width: 100vw;
   min-height: 100vh;
-  background-image: url(../img/heart.png);
+  background-image: url(../vid/dog.mp4);
   background-position: center;
   background-size: cover;
   color: white;
@@ -82,6 +82,29 @@
   box-shadow: 22px 10px 5px 6px rgba(0, 0, 0, 0.73);
 }
 
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+@media (min-aspect-ratio: 16/9) {
+  .bg {
+      object-fit: cover;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .bg {
+      object-fit: cover;
+  }
+}
+
 .cards-container {
   display: grid;
   font-family: "Smooch Sans", serif;
@@ -117,12 +140,12 @@
 
 .card-title {
   margin-top: 8px;
-  font-size: 1rem;
+  font-size: 4rem;
 }
 
 .card-description {
   margin-top: 4px;
-  font-size: 0.9rem;
+  font-size: 3rem;
   color: #666;
 }
 
